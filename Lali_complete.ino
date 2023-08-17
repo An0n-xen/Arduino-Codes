@@ -5,13 +5,11 @@
 #include <MFRC522.h>
 #include <Servo.h>
 
-
 #define SS_PIN 10
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 Servo myservo;
 int analogPin = A1;
-
 
 LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 
 
